@@ -1,0 +1,19 @@
+html, body {
+  background: url(ponte.jpg) rgba(0, 0, 0, .7) center/cover;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
+.title { font-size: 6vw; text-transform: uppercase; }
+.counter { font-size: 9vw; }
+.counter > span { display: inline-block; text-align: center; width: 6vw; }

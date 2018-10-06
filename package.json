@@ -1,0 +1,12 @@
+{
+  "name": "taxmeter",
+  "version": "0.1.0",
+  "description": "Forwarding API for Impostometro",
+  "main": "server.js",
+  "repository": "https://github.com/ranisalt/impostometro",
+  "author": "Ranieri Althoff <ranisalt@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "10.x"
+  }
+}
