@@ -9,7 +9,8 @@ body {
     display: flex;
     flex-flow: column;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
+    overflow: hidden;
     text-align: center;
     width: 100vw;
 }
@@ -17,3 +18,23 @@ body {
 .title { font-size: 6vw; text-transform: uppercase; }
 .counter { font-size: 9vw; }
 .counter > span { display: inline-block; text-align: center; width: 6vw; }
+.footer { margin: 1em; }
+.footer > a { color: inherit; }
+
+/* source: loading.io */
+.lds-dual-ring { display: inline-block; height: 64px; width: 64px; }
+.lds-dual-ring:after {
+  animation: lds-dual-ring 1.2s linear infinite;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  content: " ";
+  display: block;
+  height: 46px;
+  margin: 1px;
+  width: 46px;
+}
+@keyframes lds-dual-ring {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
