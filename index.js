@@ -1,7 +1,7 @@
 (() => {
   const interval = 1000 / 30
 
-  function fetchData () {
+  const fetchData = () => {
     const target = new URL('/', 'https://taxmeter.herokuapp.com')
     target.searchParams.append('state', 'sc')
     return window.fetch(target, {mode: 'cors'}).then(response => response.json())
@@ -11,7 +11,7 @@
     const counter = document.querySelector('.counter')
 
     fetchData().then(({value, increment}) => {
-      function updateCounter () {
+      const updateCounter = () => {
         const now = new Date()
         const elapsed = now.getUTCMilliseconds() + 1000 * (now.getSeconds() + 60 * (now.getMinutes() + 60 * now.getHours()))
 
