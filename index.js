@@ -4,7 +4,7 @@
   const fetchData = () => {
     const target = new URL('/', 'https://taxmeter.herokuapp.com')
     target.searchParams.append('state', 'sc')
-    return window.fetch(target, {mode: 'cors'}).then(response => response.json())
+    return window.fetch(target, {mode: 'no-cors'}).then(response => response.json())
   }
 
   document.addEventListener('DOMContentLoaded', ev => {
